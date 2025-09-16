@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kenyan Tea Highlands & Fair Trade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- For simple responsive navbar toggle icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Navigation bar style */
+    .topnav {
+      background-color: #111;
+      overflow: hidden;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 16px 18px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background 0.2s;
+    }
+    .topnav a:hover {
+      background-color: #333;
+      color: #ffd700;
+    }
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    .topnav .icon {
+      display: none;
+    }
+    @media screen and (max-width: 620px) {
+      .topnav a { display: none; }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    @media screen and (max-width: 620px) {
+      .topnav.responsive { position: relative; }
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Responsive Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="fair-trade.html">Fair Trade Values</a>
+    <a href="environment.html">Environmental Values</a>
+    <a href="teas.html">Kenyan Teas</a>
+    <a href="tours.html">Tours</a>
+    <a href="history.html">Tea History</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="container">
+    <header>
+      <h1>Discover Kenyan Highlands Tea</h1>
+      <p>
+        Our commitment to <strong>fair trade</strong> and <strong>sustainability</strong> is at the heart of our business. Explore our values, shop premium Kenyan teas, join guided highland and tea tours, and learn about the rich history of tea in Kenya.
+      </p>
+    </header>
+
+    <!-- Photo Gallery Format -->
+    <section>
+      <h2>Gallery: Kenyan Highlands</h2>
+      <div class="photo-gallery">
+        <div class="photo-item">
+          <img src="photos/highlands1.jpg" alt="Kenyan Highlands Valley">
+          <div class="photo-caption">Sunrise over tea fields, Nandi Hills</div>
+        </div>
+        <div class="photo-item">
+          <img src="photos/highlands2.jpg" alt="Kericho Tea Plantation">
+          <div class="photo-caption">Lush Kericho tea plantation</div>
+        </div>
+        <div class="photo-item">
+          <img src="photos/highlands3.jpg" alt="Hilltop Town View">
+          <div class="photo-caption">Scenic view from Hilltop Town, Iten</div>
+        </div>
+        <!-- Add more photo-item divs as needed -->
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <small>© 2025 Your Business Name. Fair Trade & Environmentally Responsible Kenyan Tea.</small>
+  </footer>
+</body>
+</html>
